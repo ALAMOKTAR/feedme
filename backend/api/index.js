@@ -1,12 +1,12 @@
 const express = require('express')
 const cors = require('cors')
-const dotenv = require('dotenv').config()
+const dotenv = require('dotenv').config({ path: './api/.env' });
 const mongoose = require("mongoose")
-const authController = require('./controllers/authController')
-const productController = require('./controllers/productController')
-const uploadController = require('./controllers/uploadController')
-const userRoutes = require('./routes/userRoutes');
-const orderController = require('./controllers/orderController')
+const authController = require('../controllers/authController')
+const productController = require('../controllers/productController')
+const uploadController = require('../controllers/uploadController')
+const userRoutes = require('../routes/userRoutes');
+const orderController = require('../controllers/orderController')
 const app = express()
 
 
