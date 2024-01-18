@@ -20,7 +20,7 @@ const Foods = () => {
             <Link to={`/Patessiries`} className={classes.food}>
               <h4>Surcé</h4>
               <div className={classes.imgContainer}>
-                <img src={saller}/>
+                <img src="https://www.cfa-espace-concours.fr/wp-content/uploads/2023/01/patisseries-francaises-2048x1295.jpg"/>
               </div>
             </Link>
             

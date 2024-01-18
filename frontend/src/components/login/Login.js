@@ -44,8 +44,8 @@ const Login = () => {
         <div className={classes.loginRightSide}>
           <h2 className={classes.title}>Login</h2>
           <form onSubmit={handleLogin} className={classes.loginForm}>
-            <input type="email" placeholder='Type email' onChange={(e) => setEmail(e.target.value)}/>
-            <input type="password" placeholder='Type password' onChange={(e) => setPassword(e.target.value)}/>
+            <input type="email" placeholder='email' onChange={(e) => setEmail(e.target.value)}/>
+            <input type="password" placeholder='password' onChange={(e) => setPassword(e.target.value)}/>
             <button className={classes.submitBtn}>Login</button>
             <p className={classes.signupBtn}>Don't have an account? <Link to="/signup">Sign up</Link></p>
           </form>

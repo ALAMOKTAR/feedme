@@ -57,11 +57,11 @@ const Signup = () => {
         <div className={classes.signUpRightSide}>
           <h2 className={classes.title}>Sign Up</h2>
           <form onSubmit={handleSignup} className={classes.signUpForm}>
-            <input type="text" placeholder="type  name " onChange={(e) => setNom(e.target.value)}/>
-            <input type="text" placeholder="type last name " onChange={(e) => setPrenom(e.target.value)}/>
-            <input type="text" placeholder=" Numero téléphone" onChange={(e) => setTel(e.target.value)}/>
-            <input type="email" placeholder="Type email" onChange={(e) => setEmail(e.target.value)}/>
-            <input type="password" placeholder="Type password"  onChange={(e) => setPassword(e.target.value)}/>
+            <input type="text" placeholder="name " onChange={(e) => setNom(e.target.value)}/>
+            <input type="text" placeholder="last name " onChange={(e) => setPrenom(e.target.value)}/>
+            <input type="text" placeholder="phone" onChange={(e) => setTel(e.target.value)}/>
+            <input type="email" placeholder="email" onChange={(e) => setEmail(e.target.value)}/>
+            <input type="password" placeholder="password"  onChange={(e) => setPassword(e.target.value)}/>
             <button className={classes.submitBtn}>Sign Up</button>
             <p>Already have an account? <Link to='/login'>Login</Link></p>
           </form>
